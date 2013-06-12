@@ -2,15 +2,25 @@ package me.yuzko.mc.smarttitles;
 
 public class Main extends JavaPlugin {
 
-  player p = new event.getPlayer();
   player d = new event.getDisplayName();
+  Player p = (Player)nEvent.getDamager();
+
 
   @EventHandler
     
-    public void onEntity() instaceof Monster) {
-    
-    
-    }
-  
+    	public void onEntityDeath(EntityDeathEvent event)
+	{
+		Entity e = event.getEntity();
+		if(e.getLastDamageCause() instanceof EntityDamageByEntityEvent)
+		{
+			EntityDamageByEntityEvent nEvent = (EntityDamageByEntityEvent) e.getLastDamageCause();
+			if(nEvent.getDamager() instanceof Player)
+			{
+                         //Your Code Here
+                        }
+                }
+        }
+ 
+     
 
 }
