@@ -1,0 +1,16 @@
+package me.yuzko.mc.smarttitles;
+
+public class Main extends JavaPlugin {
+
+  player p = new event.getPlayer();
+  player d = new event.getDisplayName();
+
+  @EventHandler
+    
+    public void onEntity() instaceof Monster) {
+    
+    
+    }
+  
+
+}
